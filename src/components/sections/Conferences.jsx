@@ -15,7 +15,7 @@ function Conferences() {
       link: "#",
     },
     {
-      shortName: "COnference 03",
+      shortName: "Conference 03",
       fullName: "International Conference On Innovation & Entrepreneurship in Computing, Engineering, and Science Education 2026",
       description:
         "Write a short description of the second co-located conference here. Explain its focus, scope, or international relevance.",

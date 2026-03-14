@@ -3,7 +3,7 @@ function Navbar() {
     <header className="sticky top-0 z-50 border-b border-[#16205a] bg-white shadow-sm">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
         {/* Left: Logos */}
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-2">
           {/* Logo 1 */}
           <div className="flex h-12 w-12 items-center justify-center overflow-hidden">
             <img
@@ -16,7 +16,7 @@ function Navbar() {
           {/* Logo 2 */}
           <div className="flex h-12 w-12 items-center justify-center overflow-hidden">
             <img
-              src="/images/Logo-Tersier-Diktisaintek-Berdampak-1.png"
+              src="/images/Logo_Universitas_Brawijaya.png"
               alt="Kemendiktisaintek"
               className="h-10 w-10 object-contain"
             />
@@ -28,6 +28,15 @@ function Navbar() {
               src="/images/LOGO-white-bg.png"
               alt="Brawijaya Summit 2026"
               className="max-h-full w-full object-contain"
+            />
+          </div>
+
+          {/* Logo 4 */}
+          <div className="flex h-12 w-12 items-center justify-center overflow-hidden">
+            <img
+              src="/images/Logo-Tersier-Diktisaintek-Berdampak-1.png"
+              alt="Kemendiktisaintek"
+              className="h-10 w-10 object-contain"
             />
           </div>
         </div>
@@ -46,9 +55,9 @@ function Navbar() {
           <a href="#partners" className="text-sm font-medium text-slate-800 hover:text-[#16205a]">
             Partners
           </a>
-          <a href="#contact" className="text-sm font-medium text-slate-800 hover:text-[#16205a]">
+          {/* <a href="#contact" className="text-sm font-medium text-slate-800 hover:text-[#16205a]">
             Contact
-          </a>
+          </a> */}
         </nav>
       </div>
     </header>
