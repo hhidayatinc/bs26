@@ -1,20 +1,15 @@
-import Navbar from "./components/layout/Navbar";
-import Hero from "./components/sections/Hero";
-import About from "./components/sections/About";
-import Conferences from "./components/sections/Conferences";
-import Keynote from "./components/sections/Keynote";
-import Partners from "./components/sections/Partners";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import InventConference from "./pages/conferences/InventConference";
 
 function App() {
   return (
-    <div>
-      <Navbar />
-      <Hero />
-      <About />
-      <Conferences />
-      <Keynote />
-      <Partners />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/conference/invent-2026" element={<InventConference />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

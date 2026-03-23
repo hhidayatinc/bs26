@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function Conferences() {
   const conferences = [
     {
@@ -5,7 +7,7 @@ function Conferences() {
       fullName: "International Conference On Innovation & Entrepreneurship in Computing, Engineering, and Science Education 2026",
       description:
         "Write a short description of the second co-located conference here. Explain its focus, scope, or international relevance.",
-      link: "#",
+      link: "/conference/invent-2026",
     },
     {
       shortName: "Conference 02",
