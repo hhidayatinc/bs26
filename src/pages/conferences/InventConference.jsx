@@ -102,48 +102,34 @@ function InventConference() {
 
       {/* Hero */}
       <section className="bg-gradient-to-br from-[#16205a] via-[#1d2f8a] to-[#6c2d84] px-6 py-16 text-white md:py-24">
-        <div className="mx-auto grid max-w-7xl items-center gap-10 lg:grid-cols-2">
-          <div>
-            <p className="inline-block rounded-full border border-white/20 bg-white/10 px-4 py-2 text-sm">
-              27–28 October 2026 · Offline and Online Attendance
-            </p>
+  <div className="mx-auto max-w-7xl">
+    <div className="flex flex-col items-start">
+      <p className="inline-block rounded-full border border-white/20 bg-white/10 px-4 py-2 text-sm">
+        27–28 October 2026 · Offline and Online Attendance
+      </p>
 
-            <div className="mt-6">
-              <img
-                src="/images/INVENT-2026-LOGO.png"
-                alt="INVENT 2026"
-                className="max-h-24 w-auto object-contain"
-              />
-            </div>
+      <div className="mt-6 inline-flex w-fit rounded-[28px] bg-white px-5 py-4 shadow-2xl">
+        <img
+          src="/images/INVENT-2026-LOGO.png"
+          alt="INVENT 2026"
+          className="h-auto w-auto max-h-24 object-contain"
+        />
+      </div>
+    </div>
 
-            <h2 className="mt-8 text-4xl font-black leading-tight md:text-5xl">
-              International Conference on Innovation and Entrepreneurship
-            </h2>
+    <h2 className="mt-8 max-w-6xl text-4xl font-black leading-tight md:text-5xl">
+      ATU-Net International Conference On Innovation & Entrepreneurship in
+      Computing, Engineering, and Science Education 2026
+    </h2>
 
-            <p className="mt-4 text-xl font-medium text-orange-200">
-              in Computing, Engineering, and Science Education
-            </p>
-
-            <p className="mt-8 max-w-2xl text-lg leading-8 text-slate-100">
-              INVENT 2026 is an annual international academic forum under the
-              Asia Technological University Network (ATU-Net) that fosters
-              scholarly exchange, collaboration, and knowledge sharing among
-              academics, researchers, professionals, and practitioners across
-              diverse disciplines.
-            </p>
-          </div>
-
-          <div className="flex justify-center lg:justify-end">
-            <div className="rounded-[32px] bg-white p-5 shadow-2xl">
-              <img
-                src="/images/INVENT-2026-LOGO.png"
-                alt="INVENT 2026"
-                className="w-full max-w-md object-contain"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
+    <p className="mt-8 max-w-2xl text-lg leading-8 text-orange-200">
+      INVENT 2026 is an annual international academic forum under the Asia
+      Technological University Network (ATU-Net) that fosters scholarly exchange,
+      collaboration, and knowledge sharing among academics, researchers,
+      professionals, and practitioners across diverse disciplines.
+    </p>
+  </div>
+</section>
 
       {/* Previous Editions */}
       <section className="bg-white px-6 py-14">
