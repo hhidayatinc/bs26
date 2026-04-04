@@ -72,24 +72,25 @@ const participants = [
 function InventConference() {
   return (
     <div className="min-h-screen bg-white text-slate-900">
-      <header className="sticky top-0 z-50 bg-[#16205a] px-6 py-4 text-white shadow-sm">
+      <header className="sticky top-0 z-50 bg-[#16205a] px-4 py-4 text-white shadow-sm md:px-6">
         <div className="mx-auto flex max-w-7xl flex-col gap-4 md:flex-row md:items-center md:justify-between">
           <div>
-            <p className="text-xs uppercase tracking-[0.25em] text-blue-200">
+            <p className="text-[11px] uppercase tracking-[0.25em] text-blue-200 md:text-xs">
               Co-Located Conference
             </p>
-            <h1 className="text-xl font-bold">INVENT 2026</h1>
+            <h1 className="text-2xl font-bold md:text-xl">INVENT 2026</h1>
           </div>
 
-          <div className="flex flex-wrap items-center gap-3">
+          <div className="flex flex-wrap gap-3">
             <a
-              href="#"
+              href="https://your-register-link.com"
               target="_blank"
               rel="noreferrer"
-              className="rounded-xl bg-[#ff8a5c] px-5 py-2 text-sm font-semibold text-white transition hover:opacity-90"
+              className="rounded-xl bg-[#ff8a5c] px-4 py-2 text-sm font-semibold text-white transition hover:opacity-90"
             >
               Register Here
             </a>
+
             <Link
               to="/"
               className="rounded-xl border border-white/20 px-4 py-2 text-sm font-medium text-white transition hover:bg-white/10"
@@ -101,66 +102,66 @@ function InventConference() {
       </header>
 
       {/* Hero */}
-      <section className="bg-gradient-to-br from-[#16205a] via-[#1d2f8a] to-[#6c2d84] px-6 py-16 text-white md:py-24">
-  <div className="mx-auto max-w-7xl">
-    <div className="flex flex-col items-start">
-      <p className="inline-block rounded-full border border-white/20 bg-white/10 px-4 py-2 text-sm">
-        27–28 October 2026 · Offline and Online Attendance
-      </p>
+      <section className="bg-gradient-to-br from-[#16205a] via-[#1d2f8a] to-[#6c2d84] px-4 py-10 text-white md:px-6 md:py-16 lg:py-24">
+        <div className="mx-auto max-w-7xl">
+          <div className="flex flex-col items-start">
+            <p className="inline-block rounded-full border border-white/20 bg-white/10 px-4 py-2 text-xs leading-6 md:text-sm">
+              27–28 October 2026 · Offline and Online Attendance
+            </p>
 
-      <div className="mt-6 inline-flex w-fit rounded-[28px] bg-white px-5 py-4 shadow-2xl">
-        <img
-          src="/images/INVENT-2026-LOGO.png"
-          alt="INVENT 2026"
-          className="h-auto w-auto max-h-24 object-contain"
-        />
-      </div>
-    </div>
+            <div className="mt-5 inline-flex w-fit max-w-full rounded-[24px] bg-white px-4 py-3 shadow-2xl md:mt-6 md:rounded-[28px] md:px-5 md:py-4">
+              <img
+                src="/images/INVENT-2026-LOGO.png"
+                alt="INVENT 2026"
+                className="h-auto w-auto max-h-16 max-w-full object-contain md:max-h-24"
+              />
+            </div>
+          </div>
 
-    <h2 className="mt-8 max-w-6xl text-4xl font-black leading-tight md:text-5xl">
-      ATU-Net International Conference On Innovation & Entrepreneurship in
-      Computing, Engineering, and Science Education 2026
-    </h2>
+          <h2 className="mt-6 max-w-6xl text-3xl font-black leading-tight sm:text-4xl md:mt-8 md:text-5xl lg:text-6xl">
+            ATU-Net International Conference On Innovation & Entrepreneurship in
+            Computing, Engineering, and Science Education 2026
+          </h2>
 
-    <p className="mt-8 max-w-2xl text-lg leading-8 text-orange-200">
-      INVENT 2026 is an annual international academic forum under the Asia
-      Technological University Network (ATU-Net) that fosters scholarly exchange,
-      collaboration, and knowledge sharing among academics, researchers,
-      professionals, and practitioners across diverse disciplines.
-    </p>
-  </div>
-</section>
+          <p className="mt-6 max-w-2xl text-base leading-8 text-orange-200 md:mt-8 md:text-lg">
+            INVENT 2026 is an annual international academic forum under the Asia
+            Technological University Network (ATU-Net) that fosters scholarly exchange,
+            collaboration, and knowledge sharing among academics, researchers,
+            professionals, and practitioners across diverse disciplines.
+          </p>
+        </div>
+      </section>
 
       {/* Previous Editions */}
-      <section className="bg-white px-6 py-14">
+      <section className="bg-white px-4 py-12 md:px-6 md:py-14">
         <div className="mx-auto max-w-7xl">
           <div className="mx-auto max-w-3xl text-center">
-            <p className="text-sm font-semibold uppercase tracking-[0.25em] text-[#16205a]">
+            <p className="text-xs font-semibold uppercase tracking-[0.25em] text-[#16205a] md:text-sm">
               Previous Editions
             </p>
-            <h3 className="mt-4 text-3xl font-bold md:text-4xl">
+            <h3 className="mt-4 text-3xl font-bold leading-tight md:text-4xl">
               INVENT Conference Track Record
             </h3>
-            <p className="mt-4 text-lg leading-8 text-slate-600">
-              Explore previous editions of INVENT to highlight its continuity
-              and international academic collaboration.
+            <p className="mt-4 text-base leading-8 text-slate-600 md:text-lg">
+              Explore previous editions of INVENT to highlight its continuity and
+              international academic collaboration.
             </p>
           </div>
 
-          <div className="mt-10 grid gap-6 md:grid-cols-3">
+          <div className="mt-10 grid gap-5 md:grid-cols-3 md:gap-6">
             {previousEditions.map((item) => (
               <a
                 key={item.year}
                 href={item.url}
                 target="_blank"
                 rel="noreferrer"
-                className="block rounded-2xl border border-slate-200 bg-slate-50 p-6 transition hover:-translate-y-1 hover:shadow-md"
+                className="block rounded-2xl border border-slate-200 bg-slate-50 p-5 transition hover:-translate-y-1 hover:shadow-md md:p-6"
               >
                 <div className="inline-block rounded-full bg-[#16205a] px-4 py-2 text-sm font-semibold text-white">
                   {item.year}
                 </div>
 
-                <h4 className="mt-5 text-xl font-bold text-slate-900">
+                <h4 className="mt-5 text-2xl font-bold leading-tight text-slate-900 md:text-xl">
                   {item.label}
                 </h4>
 
@@ -239,27 +240,28 @@ function InventConference() {
             </h3>
           </div>
 
-          <div className="mt-12 space-y-8">
+          <div className="mt-12 space-y-6 md:space-y-8">
             {speakers.map((speaker, index) => (
               <div
                 key={index}
-                className="overflow-hidden rounded-[32px] border border-slate-200 bg-white shadow-sm"
+                className="overflow-hidden rounded-[24px] border border-slate-200 bg-white shadow-sm md:rounded-[32px]"
               >
                 <div className="grid items-center md:grid-cols-[260px_1fr]">
-                  <div className="flex h-full items-center justify-center bg-slate-100 p-6">
+                  <div className="flex h-full items-center justify-center bg-slate-100 p-5 md:p-6">
                     <img
                       src={speaker.image}
                       alt={speaker.name}
-                      className="w-full max-w-[200px] rounded-2xl object-cover"
+                      className="w-full max-w-[170px] rounded-2xl object-cover md:max-w-[200px]"
                     />
                   </div>
 
-                  <div className="p-8 md:p-10">
+                  <div className="p-6 md:p-10">
                     <div className="inline-block rounded-full bg-[#16205a] px-4 py-2 text-sm font-semibold text-white">
                       {speaker.role}
                     </div>
-                    <div className="mt-6 flex flex-wrap items-center gap-3">
-                      <h4 className="text-3xl font-bold text-slate-900">
+
+                    <div className="mt-5 flex flex-wrap items-center gap-3">
+                      <h4 className="text-2xl font-bold leading-tight text-slate-900 md:text-3xl">
                         {speaker.name}
                       </h4>
                       {speaker.tbc && (
@@ -268,7 +270,8 @@ function InventConference() {
                         </span>
                       )}
                     </div>
-                    <p className="mt-3 text-lg leading-8 text-slate-600">
+
+                    <p className="mt-3 text-base leading-8 text-slate-600 md:text-lg">
                       {speaker.title}
                     </p>
                   </div>
@@ -440,18 +443,18 @@ function InventConference() {
       </section>
 
       {/* Poster */}
-      <section className="px-6 py-16">
+      <section className="bg-slate-50 px-4 py-12 md:px-6 md:py-16">
         <div className="mx-auto max-w-6xl">
           <div className="mx-auto max-w-3xl text-center">
-            <p className="text-sm font-semibold uppercase tracking-[0.25em] text-[#16205a]">
+            <p className="text-xs font-semibold uppercase tracking-[0.25em] text-[#16205a] md:text-sm">
               Conference Snapshot
             </p>
-            <h3 className="mt-4 text-3xl font-bold md:text-4xl">
+            <h3 className="mt-4 text-3xl font-bold leading-tight md:text-4xl">
               INVENT 2026 Poster
             </h3>
           </div>
 
-          <div className="mt-10 overflow-hidden rounded-[32px] border border-slate-200 bg-white shadow-sm">
+          <div className="mt-10 overflow-hidden rounded-[24px] border border-slate-200 bg-white shadow-sm md:rounded-[32px]">
             <img
               src="/images/poster-invent.jpeg"
               alt="INVENT 2026 Poster"
