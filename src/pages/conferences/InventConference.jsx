@@ -537,10 +537,10 @@ function InventConference() {
       <section className="px-6 py-16 bg-gradient-to-br from-[#16205a] to-[#5b2c83]">
         <div className="mx-auto max-w-6xl">
           <div className="mx-auto max-w-3xl text-center">
-            <p className="text-xl font-semibold uppercase tracking-[0.25em] text-white">
+            <p className="text-3xl font-semibold uppercase tracking-[0.25em] text-white">
               Call for Papers
             </p>
-            <h3 className="mt-4 text-3xl font-bold md:text-4xl text-white">
+            <h3 className="mt-4 text-xl font-bold md:text-4xl text-white">
               Conference Theme and Sub-Themes
             </h3>
           </div>
