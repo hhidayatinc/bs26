@@ -228,7 +228,7 @@ const rundownDays = [
       {
         time: "00.00 – 10.00",
         title: "Bromo Sunrise Tour (Optional) / Departure Day",
-        note: "Tour leader / Transportation Division",
+        note: "USD 50 per pax / IDR 750,000",
       },
     ],
   },
@@ -289,11 +289,11 @@ function InventConference() {
                 alt="Tut Wuri Handayani"
                 className="h-7 w-auto object-contain md:h-10"
               />
-              <img
+              {/* <img
                 src="/images/Logo-Tersier-Diktisaintek-Berdampak-1.png"
                 alt="Diktisaintek Berdampak"
                 className="h-6 w-auto object-contain md:h-9"
-              />
+              /> */}
             </div>
 
             {/* Date badge */}
