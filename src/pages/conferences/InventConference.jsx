@@ -228,7 +228,7 @@ const rundownDays = [
       {
         time: "00.00 – 10.00",
         title: "Bromo Sunrise Tour (Optional) / Departure Day",
-        note: "USD 50 per pax / IDR 750,000",
+        note: "Tour Leader",
       },
     ],
   },
@@ -284,11 +284,11 @@ function InventConference() {
                 alt="Davao del Sur State College"
                 className="h-7 w-auto object-contain md:h-10"
               />
-              <img
+              {/* <img
                 src="/images/tutwuri.jpeg"
                 alt="Tut Wuri Handayani"
                 className="h-7 w-auto object-contain md:h-10"
-              />
+              /> */}
               {/* <img
                 src="/images/Logo-Tersier-Diktisaintek-Berdampak-1.png"
                 alt="Diktisaintek Berdampak"
@@ -670,6 +670,10 @@ function InventConference() {
                   <tr>
                     <td className="border border-slate-300 px-4 py-3">Non-Presenter</td>
                     <td className="border border-slate-300 px-4 py-3">100</td>
+                  </tr>
+                  <tr>
+                    <td className="border border-slate-300 px-4 py-3" colSpan="2">Bromo Sunrise Trip (optional)</td>
+                    <td className="border border-slate-300 px-4 py-3">50 per pax</td>
                   </tr>
                 </tbody>
               </table>
