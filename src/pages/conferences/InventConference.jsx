@@ -41,6 +41,13 @@ const speakers = [
     image: "/images/corriena.jpeg",
     tbc: false,
   },
+  {
+    role: "Keynote Speaker",
+    name: "Dr. Cherry Ann P. Roxas",
+    title: "Davao del Sur State College, the Philippines",
+    image: "/images/Cherry.jpeg",
+    tbc: false,
+  },
 ];
 
 const subThemes = [
