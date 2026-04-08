@@ -704,7 +704,7 @@ function InventConference() {
         </div>
       </section>
 
-      {/* Poster */}
+      {/* Poster
       <section className="bg-slate-50 px-4 py-12 md:px-6 md:py-16">
         <div className="mx-auto max-w-6xl">
           <div className="mx-auto max-w-3xl text-center">
@@ -719,6 +719,20 @@ function InventConference() {
           <div className="mt-10 overflow-hidden rounded-[24px] border border-slate-200 bg-white shadow-sm md:rounded-[32px]">
             <img
               src="/images/poster-invent.jpeg"
+              alt="INVENT 2026 Poster"
+              className="w-full object-cover"
+            />
+          </div>
+        </div>
+      </section> */}
+      {/* Atu NEt members */}
+      <section className="bg-slate-50 px-4 py-12 md:px-6 md:py-16">
+        <div className="mx-auto max-w-6xl">
+
+
+          <div className="mt-10 overflow-hidden rounded-[24px] border border-slate-200 bg-white shadow-sm md:rounded-[32px]">
+            <img
+              src="/images/atunetmembers.jpeg"
               alt="INVENT 2026 Poster"
               className="w-full object-cover"
             />
