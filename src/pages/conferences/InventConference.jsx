@@ -240,6 +240,15 @@ const rundownDays = [
     ],
   },
 ];
+const journalList = [
+  "Frontiers in Human Dynamics (Q1)",
+  "Discover Sustainability (Q1)",
+  "Humanities and Social Sciences Communications (Q1)",
+  "Quality and Quantity (Q1)",
+  "Future Business Journal (WoS indexed)",
+  "Human Behavior and Emerging Technologies (Q1)",
+  "MSW Management (Q4)",
+];
 
 function InventConference() {
   return (
@@ -252,7 +261,7 @@ function InventConference() {
 
           <div className="flex flex-wrap gap-3">
             <a
-              href="https://your-register-link.com"
+              href="https://s.ub.ac.id/registrationatunet2026"
               target="_blank"
               rel="noreferrer"
               className="rounded-xl bg-[#ff8a5c] px-4 py-2 text-sm font-semibold text-white transition hover:opacity-90"
@@ -260,12 +269,12 @@ function InventConference() {
               Register Here
             </a>
 
-            <Link
+            {/* <Link
               to="/"
               className="rounded-xl border border-white/20 px-4 py-2 text-sm font-medium text-white transition hover:bg-white/10"
             >
               Back to Home
-            </Link>
+            </Link> */}
           </div>
         </div>
       </header>
@@ -700,6 +709,43 @@ function InventConference() {
               <li>International book chapter (possible inclusion to Scopus-indexing)</li>
               <li>Conference proceedings with e-ISSN</li>
             </ol>
+          </div>
+        </div>
+      </section>
+
+      {/* Journal List */}
+      <section className="bg-white px-6 py-16">
+        <div className="mx-auto max-w-7xl">
+          <div className="mx-auto max-w-3xl text-center">
+            <p className="text-sm font-semibold uppercase tracking-[0.25em] text-[#16205a]">
+              Journal Opportunities
+            </p>
+            <h3 className="mt-4 text-3xl font-bold md:text-4xl">
+              List of Target Journals
+            </h3>
+            <p className="mt-4 text-lg leading-8 text-slate-600">
+              Selected journals for potential publication opportunities related to
+              accepted and presented papers.
+            </p>
+          </div>
+
+          <div className="mt-10 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
+            {journalList.map((journal, index) => (
+              <div
+                key={index}
+                className="rounded-[24px] border border-slate-200 bg-slate-50 p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md"
+              >
+                <div className="flex items-start gap-4">
+                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#16205a] text-sm font-bold text-white">
+                    {index + 1}
+                  </div>
+
+                  <p className="text-lg font-semibold leading-8 text-slate-800">
+                    {journal}
+                  </p>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>

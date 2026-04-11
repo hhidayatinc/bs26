@@ -5,6 +5,7 @@ import Conferences from "../components/sections/Conferences";
 import Keynote from "../components/sections/Keynote";
 import Partners from "../components/sections/Partners";
 
+
 function Home() {
   return (
     <div>
