@@ -645,12 +645,20 @@ function InventConference() {
         </div>
       </section>
 
-      {/* Fee and Publication */}
+            {/* Registration Fee */}
       <section className="bg-slate-50 px-6 py-16">
-        <div className="mx-auto grid max-w-7xl gap-8 lg:grid-cols-2">
-          <div className="rounded-[32px] border border-slate-200 bg-white p-8 shadow-sm">
-            <h3 className="text-3xl font-bold text-[#16205a]">Registration Fee</h3>
-            <div className="mt-6 overflow-x-auto">
+        <div className="mx-auto max-w-7xl">
+          <div className="mx-auto max-w-3xl text-center">
+            <p className="text-sm font-semibold uppercase tracking-[0.25em] text-[#16205a]">
+              Registration
+            </p>
+            <h3 className="mt-4 text-3xl font-bold md:text-4xl">
+              Registration Fee
+            </h3>
+          </div>
+
+          <div className="mt-10 rounded-[32px] border border-slate-200 bg-white p-8 shadow-sm">
+            <div className="overflow-x-auto">
               <table className="w-full border-collapse text-left">
                 <thead>
                   <tr className="bg-slate-100 text-slate-900">
@@ -688,64 +696,61 @@ function InventConference() {
                     <td className="border border-slate-300 px-4 py-3">100</td>
                   </tr>
                   <tr>
-                    <td className="border border-slate-300 px-4 py-3" colSpan="2">Bromo Sunrise Trip (optional)</td>
-                    <td className="border border-slate-300 px-4 py-3">50 per pax</td>
+                    <td className="border border-slate-300 px-4 py-3" colSpan="2">
+                      Bromo Sunrise Trip (optional)
+                    </td>
+                    <td className="border border-slate-300 px-4 py-3">60 per pax</td>
                   </tr>
                 </tbody>
               </table>
             </div>
           </div>
-
-          <div className="rounded-[32px] bg-gradient-to-br from-[#16205a] to-[#5b2c83] p-8 text-white shadow-lg">
-            <h3 className="text-3xl font-bold">Publication Output</h3>
-            <p className="mt-5 text-lg leading-8 text-slate-100">
-              The conference will produce academic publication outputs in the
-              form of a book chapter published by Springer. Accepted and
-              presented papers will undergo peer review and be included in one
-              of the following options:
-            </p>
-            <ol className="mt-6 list-decimal space-y-3 pl-6 text-lg leading-8 text-slate-100">
-              <li>International conference proceedings (possible inclusion to Scopus-indexing)</li>
-              <li>International book chapter (possible inclusion to Scopus-indexing)</li>
-              <li>Conference proceedings with e-ISSN</li>
-            </ol>
-          </div>
         </div>
       </section>
 
-      {/* Journal List */}
+      {/* Publication Output */}
       <section className="bg-white px-6 py-16">
         <div className="mx-auto max-w-7xl">
           <div className="mx-auto max-w-3xl text-center">
             <p className="text-sm font-semibold uppercase tracking-[0.25em] text-[#16205a]">
-              Journal Opportunities
+              Publication
             </p>
             <h3 className="mt-4 text-3xl font-bold md:text-4xl">
-              List of Target Journals
+              Publication Output
             </h3>
-            <p className="mt-4 text-lg leading-8 text-slate-600">
-              Selected journals for potential publication opportunities related to
-              accepted and presented papers.
-            </p>
           </div>
 
-          <div className="mt-10 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
-            {journalList.map((journal, index) => (
-              <div
-                key={index}
-                className="rounded-[24px] border border-slate-200 bg-slate-50 p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md"
-              >
-                <div className="flex items-start gap-4">
-                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#16205a] text-sm font-bold text-white">
-                    {index + 1}
-                  </div>
+          <div className="mt-10 rounded-[32px] bg-gradient-to-br from-[#16205a] to-[#5b2c83] p-8 text-white shadow-lg md:p-10">
+            <p className="text-lg leading-8 text-slate-100">
+              The conference will produce academic publication outputs in the form
+              of a book chapter published by Springer. Accepted and presented
+              papers will undergo peer review and be included in one of the
+              following options:
+            </p>
 
-                  <p className="text-lg font-semibold leading-8 text-slate-800">
-                    {journal}
-                  </p>
-                </div>
-              </div>
-            ))}
+            <ol className="mt-8 list-decimal space-y-4 pl-6 text-lg leading-8 text-slate-100">
+              <li>
+                International Conference Proceedings (possible inclusion to
+                Scopus-indexing)
+              </li>
+              <li>
+                International Book Chapter (possible inclusion to
+                Scopus-indexing)
+              </li>
+              <li>Conference Proceedings with e-ISSN</li>
+              <li>
+                Scopus Indexed Journals:
+                <ul className="mt-4 list-disc space-y-2 pl-6 text-base leading-7 text-slate-100 md:text-lg">
+                  <li>Frontiers in Human Dynamics (Q1)</li>
+                  <li>Discover Sustainability (Q1)</li>
+                  <li>Humanities and Social Sciences Communications (Q1)</li>
+                  <li>Quality and Quantity (Q1)</li>
+                  <li>Future Business Journal (WoS indexed)</li>
+                  <li>Human Behavior and Emerging Technologies (Q1)</li>
+                  <li>SW Management (Q4)</li>
+                </ul>
+              </li>
+            </ol>
           </div>
         </div>
       </section>
