@@ -240,6 +240,24 @@ const rundownDays = [
     ],
   },
 ];
+const sdgLogos = [
+  {
+    name: "SDG 3",
+    image: "/images/sdg3.png",
+  },
+  {
+    name: "SDG 4",
+    image: "/images/sdg4.png",
+  },
+  {
+    name: "SDG 8",
+    image: "/images/sdg8.png",
+  },
+  {
+    name: "SDG 17",
+    image: "/images/sdg17.png",
+  },
+];
 const journalList = [
   "Frontiers in Human Dynamics (Q1)",
   "Discover Sustainability (Q1)",
@@ -254,12 +272,23 @@ function InventConference() {
   return (
     <div className="min-h-screen bg-white text-slate-900">
       <header className="sticky top-0 z-50 bg-[#16205a] px-4 py-4 text-white shadow-sm md:px-6">
-        <div className="mx-auto flex max-w-7xl flex-col gap-4 md:flex-row md:items-center md:justify-between">
-          <div>
-            <h1 className="text-2xl font-bold md:text-xl">ATU-Net INVENT 2026</h1>
-          </div>
+        <div className="mx-auto flex max-w-7xl items-center justify-between">
 
-          <div className="flex flex-wrap gap-3">
+          {/* LEFT */}
+          <h1 className="text-2xl font-bold md:text-xl">
+            ATU-Net INVENT 2026
+          </h1>
+
+          {/* RIGHT (grouped) */}
+          <div className="flex items-center gap-3">
+
+            <Link
+              to="/conference/invent-2026/committee"
+              className="rounded-xl border border-white/20 px-4 py-2 text-sm font-medium text-white hover:bg-white/10"
+            >
+              Committee
+            </Link>
+
             <a
               href="https://s.ub.ac.id/registrationatunet2026"
               target="_blank"
@@ -269,13 +298,8 @@ function InventConference() {
               Register Here
             </a>
 
-            {/* <Link
-              to="/"
-              className="rounded-xl border border-white/20 px-4 py-2 text-sm font-medium text-white transition hover:bg-white/10"
-            >
-              Back to Home
-            </Link> */}
           </div>
+
         </div>
       </header>
 
@@ -602,7 +626,7 @@ function InventConference() {
       </section>
 
       {/* Conference Information */}
-      <section className="px-6 py-16">
+      <section className="bg-gradient-to-br from-[#f57c00] via-[#ff9800] to-[#ffb74d] px-6 py-16">
         <div className="mx-auto grid max-w-7xl gap-8 lg:grid-cols-2">
           <div className="rounded-3xl border border-slate-200 bg-white p-8 shadow-sm">
             <h3 className="text-2xl font-bold text-[#16205a]">Important Dates</h3>
@@ -630,22 +654,146 @@ function InventConference() {
             <h3 className="text-2xl font-bold text-[#16205a]">Conference Details</h3>
             <div className="mt-5 space-y-3 text-lg leading-8 text-slate-700">
               <p>
-                <span className="font-semibold">Location:</span> Universitas
-                Brawijaya, Malang, Indonesia
+                <span className="font-semibold">Location:</span> Universitas Brawijaya, Malang, Indonesia
               </p>
               <p>
                 <span className="font-semibold">Format:</span> Offline and Online Attendance
               </p>
               <p>
-                <span className="font-semibold">Conference Date:</span> 27–28
-                October 2026
+                <span className="font-semibold">Conference Date:</span> 27–28 October 2026
+              </p>
+              <p>
+                <span className="font-semibold">Correspondence Email:</span>{" "}
+                <a
+                  href="mailto:invent@ub.ac.id"
+                  className="text-[#16205a] underline underline-offset-4"
+                >
+                  invent@ub.ac.id
+                </a>
               </p>
             </div>
           </div>
         </div>
       </section>
 
-            {/* Registration Fee */}
+      {/* SDGs
+      <section className="bg-white px-6 py-16">
+        <div className="mx-auto max-w-7xl">
+          <div className="mx-auto max-w-4xl text-center">
+            <p className="text-sm font-semibold uppercase tracking-[0.25em] text-[#16205a]">
+              SDGs
+            </p>
+            <h3 className="mt-4 text-3xl font-bold md:text-4xl text-slate-900">
+              Sustainable Development Goals
+            </h3>
+            <p className="mt-4 text-lg leading-8 text-slate-600">
+              This conference highlights and addresses the following Sustainable
+              Development Goals (SDGs)
+            </p>
+          </div>
+
+          <div className="mt-10 grid grid-cols-2 gap-6 md:grid-cols-4">
+            {sdgLogos.map((sdg) => (
+              <div
+                key={sdg.name}
+                className="flex min-h-[180px] items-center justify-center rounded-[24px] border border-slate-200 bg-slate-50 p-6 shadow-sm"
+              >
+                <img
+                  src={sdg.image}
+                  alt={sdg.name}
+                  className="max-h-28 w-auto object-contain md:max-h-32"
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+      </section> */}
+      {/* SDGs */}
+      {/* SDGs */}
+      <section className="bg-white px-6 py-12">
+        <div className="mx-auto max-w-7xl text-center">
+
+          {/* TEXT */}
+          <h3 className="text-2xl font-bold text-[#16205a]">
+            This Conference Highlights and Addresses the Following Sustainable Development Goals (SDGs)
+          </h3>
+
+          {/* LOGO */}
+          <div className="mt-10 flex flex-wrap items-center justify-center gap-8 md:gap-12">
+
+            <img
+              src="/images/sdg3.png"
+              alt="SDG 3"
+              className="h-28 md:h-32 lg:h-36 object-contain"
+            />
+
+            <img
+              src="/images/sdg4.png"
+              alt="SDG 4"
+              className="h-28 md:h-32 lg:h-36 object-contain"
+            />
+
+            <img
+              src="/images/sdg8.png"
+              alt="SDG 8"
+              className="h-28 md:h-32 lg:h-36 object-contain"
+            />
+
+            <img
+              src="/images/sdg17.png"
+              alt="SDG 17"
+              className="h-28 md:h-32 lg:h-36 object-contain"
+            />
+
+          </div>
+
+        </div>
+      </section>
+      {/* SDGs */}
+      {/* <section className="bg-white px-6 py-16">
+        <div className="mx-auto max-w-7xl">
+          <div className="mx-auto max-w-4xl text-center">
+            <p className="text-lg leading-8 text-slate-700">
+              This conference highlights and addresses the following Sustainable Development Goals (SDGs)
+            </p>
+          </div>
+
+          <div className="mt-10 grid grid-cols-2 gap-6 md:grid-cols-4">
+            <div className="flex min-h-[180px] items-center justify-center rounded-[24px] border border-slate-200 bg-slate-50 p-6 shadow-sm">
+              <img
+                src="/images/sdg3.png"
+                alt="SDG 3"
+                className="max-h-28 w-auto object-contain md:max-h-32"
+              />
+            </div>
+
+            <div className="flex min-h-[180px] items-center justify-center rounded-[24px] border border-slate-200 bg-slate-50 p-6 shadow-sm">
+              <img
+                src="/images/sdg4.png"
+                alt="SDG 4"
+                className="max-h-28 w-auto object-contain md:max-h-32"
+              />
+            </div>
+
+            <div className="flex min-h-[180px] items-center justify-center rounded-[24px] border border-slate-200 bg-slate-50 p-6 shadow-sm">
+              <img
+                src="/images/sdg8.png"
+                alt="SDG 8"
+                className="max-h-28 w-auto object-contain md:max-h-32"
+              />
+            </div>
+
+            <div className="flex min-h-[180px] items-center justify-center rounded-[24px] border border-slate-200 bg-slate-50 p-6 shadow-sm">
+              <img
+                src="/images/sdg17.png"
+                alt="SDG 17"
+                className="max-h-28 w-auto object-contain md:max-h-32"
+              />
+            </div>
+          </div>
+        </div>
+      </section> */}
+      {/* Registration Fee */}
       <section className="bg-slate-50 px-6 py-16">
         <div className="mx-auto max-w-7xl">
           <div className="mx-auto max-w-3xl text-center">
@@ -747,7 +895,7 @@ function InventConference() {
                   <li>Quality and Quantity (Q1)</li>
                   <li>Future Business Journal (WoS indexed)</li>
                   <li>Human Behavior and Emerging Technologies (Q1)</li>
-                  <li>SW Management (Q4)</li>
+                  <li>MSW Management (Q4)</li>
                 </ul>
               </li>
             </ol>
