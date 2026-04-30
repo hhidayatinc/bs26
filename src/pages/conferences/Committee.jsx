@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 
 function Committee() {
   const advisoryBoard = [
@@ -48,28 +47,7 @@ function Committee() {
     
    <div className="min-h-screen bg-gradient-to-br from-[#16205a] via-[#1d2f8a] to-[#6c2d84]">
 
-  {/* HEADER */}
-  <header className="sticky top-0 z-50 bg-[#16205a]/90 backdrop-blur px-4 py-4 text-white shadow-sm md:px-6">
-    <div className="mx-auto flex max-w-7xl items-center justify-between">
-
-      <Link
-        to="/conference/invent-2026"
-        className="text-2xl font-bold md:text-xl hover:opacity-80"
-      >
-        ATU-Net INVENT 2026
-      </Link>
-
-      <a
-        href="https://s.ub.ac.id/registrationatunet2026"
-        target="_blank"
-        rel="noreferrer"
-        className="rounded-xl bg-[#ff8a5c] px-4 py-2 text-sm font-semibold text-white shadow-md hover:opacity-90"
-      >
-        Register Here
-      </a>
-    </div>
-  </header>
-
+  
   {/* CONTENT */}
   <div className="px-6 py-16 text-white">
     <div className="mx-auto max-w-7xl">

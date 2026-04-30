@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import Committee from "./Committee";
 
 const previousEditions = [
   {
@@ -19,14 +20,14 @@ const previousEditions = [
 ];
 
 const speakers = [
-  {
-    role: "Plenary Speaker",
-    name: "Prof. Brian Yuliarto",
-    title:
-      "Minister of Higher Education, Science, and Technology of the Republic of Indonesia",
-    image: "/images/brian.jpg",
-    tbc: true,
-  },
+  // {
+  //   role: "Plenary Speaker",
+  //   name: "Prof. Brian Yuliarto",
+  //   title:
+  //     "Minister of Higher Education, Science, and Technology of the Republic of Indonesia",
+  //   image: "/images/brian.jpg",
+  //   tbc: true,
+  // },
   {
     role: "Keynote Speaker",
     name: "Prof. Ir. Wayan Firdaus Mahmudy, S.Si., M.T., Ph.D",
@@ -282,18 +283,18 @@ function InventConference() {
           {/* RIGHT (grouped) */}
           <div className="flex items-center gap-3">
 
-            <Link
-              to="/conference/invent-2026/committee"
+            <a
+              href="#committee"
               className="rounded-xl border border-white/20 px-4 py-2 text-sm font-medium text-white hover:bg-white/10"
             >
               Committee
-            </Link>
+            </a>
 
             <a
               href="https://s.ub.ac.id/registrationatunet2026"
               target="_blank"
               rel="noreferrer"
-              className="rounded-xl bg-[#ff8a5c] px-4 py-2 text-sm font-semibold text-white transition hover:opacity-90"
+              className="rounded-xl bg-[#ff8a5c] px-4 py-2 text-sm font-semibold text-white"
             >
               Register Here
             </a>
@@ -924,6 +925,9 @@ function InventConference() {
           </div>
         </div>
       </section> */}
+      <section id="committee">
+        <Committee />
+      </section>
       {/* Atu NEt members */}
       <section className="bg-slate-50 px-4 py-12 md:px-6 md:py-16">
         <div className="mx-auto max-w-6xl">
