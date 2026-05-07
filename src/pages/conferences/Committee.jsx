@@ -61,31 +61,44 @@ function Committee() {
     <div className="min-h-screen bg-gradient-to-br from-[#16205a] via-[#1d2f8a] to-[#6c2d84]">
 
       {/* HEADER */}
-      <header className="sticky top-0 z-50 bg-[#16205a] px-4 py-4 text-white shadow-sm md:px-6">
-    <div className="mx-auto flex max-w-7xl items-center justify-between">
+     <header className="sticky top-0 z-50 bg-[#16205a] px-4 py-4 text-white shadow-sm md:px-6">
+        <div className="mx-auto flex max-w-7xl items-center justify-between">
 
-      {/* LOGO / TITLE (link ke halaman utama) */}
-      <Link
-        to="/conference/invent-2026"
-        className="text-2xl font-bold md:text-xl hover:opacity-80"
-      >
-        ATU-Net INVENT 2026
-      </Link>
+          {/* LEFT */}
+          <h1 className="text-2xl font-bold md:text-xl">
+            ATU-Net INVENT 2026
+          </h1>
 
-      {/* RIGHT */}
-      <div className="flex items-center gap-3">
-        <a
-          href="https://s.ub.ac.id/registrationatunet2026"
-          target="_blank"
-          rel="noreferrer"
-          className="rounded-xl bg-[#ff8a5c] px-4 py-2 text-sm font-semibold text-white transition hover:opacity-90"
-        >
-          Register Here
-        </a>
-      </div>
+          {/* RIGHT (grouped) */}
+          <div className="flex items-center gap-3">
 
-    </div>
-  </header>
+            <Link
+              to="/conference/invent-2026/committee"
+              className="rounded-xl border border-white/20 px-4 py-2 text-sm font-medium text-white hover:bg-white/10"
+            >
+              Committee
+            </Link>
+
+            <Link
+              to="/conference/invent-2026/author-guidelines"
+              className="rounded-xl border border-white/20 px-4 py-2 text-sm text-white hover:bg-white/10"
+            >
+              Author Guidelines
+            </Link>
+
+            <a
+              href="https://s.ub.ac.id/registrationatunet2026"
+              target="_blank"
+              rel="noreferrer"
+              className="rounded-xl bg-[#ff8a5c] px-4 py-2 text-sm font-semibold text-white"
+            >
+              Register Here
+            </a>
+
+          </div>
+
+        </div>
+      </header>
 
       {/* CONTENT */}
       <div className="px-6 py-16 text-white">

@@ -290,6 +290,13 @@ function InventConference() {
               Committee
             </Link>
 
+            <Link
+              to="/conference/invent-2026/author-guidelines"
+              className="rounded-xl border border-white/20 px-4 py-2 text-sm text-white hover:bg-white/10"
+            >
+              Author Guidelines
+            </Link>
+
             <a
               href="https://s.ub.ac.id/registrationatunet2026"
               target="_blank"

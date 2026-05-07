@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import InventConference from "./pages/conferences/InventConference";
 import Committee from "./pages/conferences/Committee";
+import AuthorGuidelines from "./pages/conferences/AuthorGuidelines";
 
 function App() {
   return (
@@ -11,6 +12,10 @@ function App() {
         <Route path="/home" element={<Home />} />
         <Route path="/conference/invent-2026" element={<InventConference />} />
         <Route path="/conference/invent-2026/committee" element={<Committee />} />
+        <Route
+          path="/conference/invent-2026/author-guidelines"
+          element={<AuthorGuidelines />}
+        />
       </Routes>
     </BrowserRouter>
   );
