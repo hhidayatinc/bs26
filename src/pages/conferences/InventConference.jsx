@@ -283,12 +283,12 @@ function InventConference() {
           {/* RIGHT (grouped) */}
           <div className="flex items-center gap-3">
 
-            <a
-              href="#committee"
+            <Link
+              to="/conference/invent-2026/committee"
               className="rounded-xl border border-white/20 px-4 py-2 text-sm font-medium text-white hover:bg-white/10"
             >
               Committee
-            </a>
+            </Link>
 
             <a
               href="https://s.ub.ac.id/registrationatunet2026"

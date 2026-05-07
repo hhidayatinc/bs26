@@ -1,8 +1,11 @@
-
+ import { Link } from "react-router-dom";
 function Committee() {
-  const advisoryBoard = [
+  const scientificCommittee = [
     "Prof. Mohammed Olayiwola Mubashiru, Ph.D., Lagos State University, Nigeria",
     "Dr. Didik Hartono, S.S., M.Pd, Universitas Brawijaya, Indonesia",
+    "•	Dr. Dadang Meru Utomo, Universitas Brawijaya, Indonesia",
+    "Dr. Sebrian Mirdeklis Beselly Putra, Universitas Brawijaya, Indonesia",
+    "Dr. drh. Albiruni Haryo, Universitas Brawijaya, Indonesia",
     "Shazwin Mat Taib, Ph.D., Universiti Teknologi Malaysia, Malaysia",
     "Dr. Miray Dogan, Çanakkale Onsekiz Mart University, Turkey",
     "Jeanette G. Bayona, Ph.D., Iloilo State University of Fisheries Science and Technology, the Philippines",
@@ -11,6 +14,12 @@ function Committee() {
     "Dr. Jain Yassin, University Teknologi MARA, Malaysia",
     "Dr. Sainee Tamphu, Yala Rajabhat University, Thailand",
     "Ts. Jacqueline Joseph, Universiti Teknologi MARA, Malaysia",
+    "Muhammad Roil Bilad, Universiti Brunei Darussalam, Brunei Darussalam",
+    "Elizabeth L. Rose, Indian Institute of Management Udaipur, India",
+    "Kenan Matawie, Western Sydney University, Australia",
+    "Jake Boy D. Carbonquillo, Samar State University, Philippines'",
+    "Anna Derkanosova, Voronezh State University of Engineering Technologies, Russian Federation",
+    "Sergey Plygun, All Russian Research Institute of Phytopathology, Russian Federation"
   ];
 
   const steeringCommittee = [
@@ -18,6 +27,7 @@ function Committee() {
     "Prof. Dr. Ir. Imam Santoso, M.P., Universitas Brawijaya, Indonesia",
     "Ir. Achmad Wicaksono, M.Eng., Ph.D. IPU, Universitas Brawijaya, Indonesia",
     "Dr. Cherry Ann P. Roxas, Davao del Sur State College, the Philippines",
+    "Prof. Widodo, S.Si., M.Si., Ph.D.Med.Sc, Universitas Brawijaya, Indonesia"
   ];
 
   const organizingCommittee = [
@@ -30,6 +40,9 @@ function Committee() {
     "Secretary III: Ain Ajeerah Binti Ramli, Universiti Teknologi Malaysia, Malaysia",
     "General Treasurer: Erma Lia Susita, M.AB, Universitas Brawijaya, Indonesia",
     "Treasurer I: Kryzelou Aguelo Ataneso, Davao del Sur State College, the Philippines",
+    "General Treasurer: Rispa Ngindana, S.AP., M.AP, Universitas Brawijaya, Indonesia",
+    "Treasurer I: Erma Lia Susita, M.AB, Universitas Brawijaya, Indonesia",
+    "Tresurer II: Kryzelou Aguelo Ataneso, Davao del Sur State College, the Philippines",
   ];
 
   const Section = ({ title, data }) => (
@@ -43,72 +56,98 @@ function Committee() {
     </div>
   );
 
+
   return (
-    
-   <div className="min-h-screen bg-gradient-to-br from-[#16205a] via-[#1d2f8a] to-[#6c2d84]">
+    <div className="min-h-screen bg-gradient-to-br from-[#16205a] via-[#1d2f8a] to-[#6c2d84]">
 
-  
-  {/* CONTENT */}
-  <div className="px-6 py-16 text-white">
-    <div className="mx-auto max-w-7xl">
+      {/* HEADER */}
+      <header className="sticky top-0 z-50 bg-[#16205a] px-4 py-4 text-white shadow-sm md:px-6">
+    <div className="mx-auto flex max-w-7xl items-center justify-between">
 
-      {/* TITLE */}
-      <div className="mx-auto max-w-3xl text-center">
-        <p className="text-sm uppercase tracking-[0.25em] text-white/70">
-          Committee
-        </p>
-        <h1 className="mt-4 text-4xl font-bold">
-          INVENT 2026 Committee
-        </h1>
-        <p className="mt-4 text-lg text-white/80">
-          Meet the distinguished committees behind the organization of the conference.
-        </p>
-      </div>
+      {/* LOGO / TITLE (link ke halaman utama) */}
+      <Link
+        to="/conference/invent-2026"
+        className="text-2xl font-bold md:text-xl hover:opacity-80"
+      >
+        ATU-Net INVENT 2026
+      </Link>
 
-      {/* GRID */}
-      <div className="mt-12 grid gap-8 lg:grid-cols-2">
-
-        {/* Advisory */}
-        <div className="rounded-3xl bg-white p-8 text-slate-800 shadow-xl">
-          <h3 className="text-2xl font-bold text-[#16205a]">
-            International Advisory Board
-          </h3>
-          <ul className="mt-5 space-y-3 text-lg leading-8">
-            {advisoryBoard.map((item, i) => (
-              <li key={i}>• {item}</li>
-            ))}
-          </ul>
-        </div>
-
-        {/* Steering */}
-        <div className="rounded-3xl bg-white p-8 text-slate-800 shadow-xl">
-          <h3 className="text-2xl font-bold text-[#16205a]">
-            Steering Committee
-          </h3>
-          <ul className="mt-5 space-y-3 text-lg leading-8">
-            {steeringCommittee.map((item, i) => (
-              <li key={i}>• {item}</li>
-            ))}
-          </ul>
-        </div>
-
-      </div>
-
-      {/* Organizing */}
-      <div className="mt-8 rounded-3xl bg-white p-8 text-slate-800 shadow-xl">
-        <h3 className="text-2xl font-bold text-[#16205a]">
-          Organizing Committee
-        </h3>
-        <ul className="mt-5 space-y-3 text-lg leading-8">
-          {organizingCommittee.map((item, i) => (
-            <li key={i}>• {item}</li>
-          ))}
-        </ul>
+      {/* RIGHT */}
+      <div className="flex items-center gap-3">
+        <a
+          href="https://s.ub.ac.id/registrationatunet2026"
+          target="_blank"
+          rel="noreferrer"
+          className="rounded-xl bg-[#ff8a5c] px-4 py-2 text-sm font-semibold text-white transition hover:opacity-90"
+        >
+          Register Here
+        </a>
       </div>
 
     </div>
-  </div>
-</div>
+  </header>
+
+      {/* CONTENT */}
+      <div className="px-6 py-16 text-white">
+        <div className="mx-auto max-w-7xl">
+
+          {/* TITLE */}
+          <div className="mx-auto max-w-3xl text-center">
+            <p className="text-sm uppercase tracking-[0.25em] text-white/70">
+              Committee
+            </p>
+            <h1 className="mt-4 text-4xl font-bold">
+              INVENT 2026 Committee
+            </h1>
+            <p className="mt-4 text-lg text-white/80">
+              Meet the distinguished committees behind the organization of the conference.
+            </p>
+          </div>
+
+          {/* GRID */}
+          <div className="mt-12 grid gap-8 lg:grid-cols-2">
+
+            {/* Advisory */}
+            <div className="rounded-3xl bg-white p-8 text-slate-800 shadow-xl">
+              <h3 className="text-2xl font-bold text-[#16205a]">
+                International Advisory Board
+              </h3>
+              <ul className="mt-5 space-y-3 text-lg leading-8">
+                {scientificCommittee.map((item, i) => (
+                  <li key={i}>• {item}</li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Steering */}
+            <div className="rounded-3xl bg-white p-8 text-slate-800 shadow-xl">
+              <h3 className="text-2xl font-bold text-[#16205a]">
+                Steering Committee
+              </h3>
+              <ul className="mt-5 space-y-3 text-lg leading-8">
+                {steeringCommittee.map((item, i) => (
+                  <li key={i}>• {item}</li>
+                ))}
+              </ul>
+            </div>
+
+          </div>
+
+          {/* Organizing */}
+          <div className="mt-8 rounded-3xl bg-white p-8 text-slate-800 shadow-xl">
+            <h3 className="text-2xl font-bold text-[#16205a]">
+              Organizing Committee
+            </h3>
+            <ul className="mt-5 space-y-3 text-lg leading-8">
+              {organizingCommittee.map((item, i) => (
+                <li key={i}>• {item}</li>
+              ))}
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
   );
 }
 
