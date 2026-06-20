@@ -20,14 +20,14 @@ const previousEditions = [
 ];
 
 const speakers = [
-  // {
-  //   role: "Plenary Speaker",
-  //   name: "Prof. Brian Yuliarto",
-  //   title:
-  //     "Minister of Higher Education, Science, and Technology of the Republic of Indonesia",
-  //   image: "/images/brian.jpg",
-  //   tbc: true,
-  // },
+  {
+    role: "Plenary Speaker",
+    name: "Prof. Brian Yuliarto",
+    title:
+      "Minister of Higher Education, Science, and Technology of the Republic of Indonesia",
+    image: "/images/brian.jpg",
+    tbc: true,
+  },
   {
     role: "Keynote Speaker",
     name: "Prof. Ir. Wayan Firdaus Mahmudy, S.Si., M.T., Ph.D",
@@ -35,18 +35,25 @@ const speakers = [
     image: "/images/wayan.jpeg",
     tbc: false,
   },
-  {
-    role: "Keynote Speaker",
-    name: "Assoc. Prof. Dr. Corrienna Abdul Talib",
-    title: "Faculty of Social Sciences and Humanities, Universiti Teknologi Malaysia, Malaysia",
-    image: "/images/corriena.jpeg",
-    tbc: false,
-  },
+  // {
+  //   role: "Keynote Speaker",
+  //   name: "Assoc. Prof. Dr. Corrienna Abdul Talib",
+  //   title: "Faculty of Social Sciences and Humanities, Universiti Teknologi Malaysia, Malaysia",
+  //   image: "/images/corriena.jpeg",
+  //   tbc: false,
+  // },
   {
     role: "Keynote Speaker",
     name: "Dr. Cherry Ann P. Roxas",
     title: "Davao del Sur State College, the Philippines",
     image: "/images/Cherry.jpeg",
+    tbc: false,
+  },
+  {
+    role: "Keynote Speaker",
+    name: "Prof. Hiroyuki Ishizaki",
+    title: "Malaysia-Japan International Institute of Technology, Universiti Teknologi Malaysia, Malaysia",
+    image: "/images/Prof-Hiroyuki.jpeg",
     tbc: false,
   },
 ];
