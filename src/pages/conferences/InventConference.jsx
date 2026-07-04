@@ -29,6 +29,20 @@ const speakers = [
     tbc: true,
   },
   {
+    role: "Remarks Speaker",
+    name: "Prof. Widodo, S.Si., M.Si., Ph.D.Med.Sc",
+    title: "Rector of Universitas Brawijaya, Indonesia",
+    image: "/images/Prof_Widodo.jpeg",
+    tbc: false,
+  },
+  {
+    role: "Remarks Speaker",
+    name: "A/Prof Dr Mohd Ariffin bin Abu Hassan",
+    title: "Chair of ATU-Net",
+    image: "/images/Prof_Arifin.jpeg",
+    tbc: false,
+  },
+  {
     role: "Keynote Speaker",
     name: "Prof. Ir. Wayan Firdaus Mahmudy, S.Si., M.T., Ph.D",
     title: "Director of AI Center, Universitas Brawijaya, Indonesia",
@@ -52,7 +66,7 @@ const speakers = [
   {
     role: "Keynote Speaker",
     name: "Prof. Hiroyuki Ishizaki",
-    title: "Malaysia-Japan International Institute of Technology, Universiti Teknologi Malaysia, Malaysia",
+    title: "Shibaura Institute of Technology, Japan",
     image: "/images/Prof-Hiroyuki.jpeg",
     tbc: false,
   },
@@ -325,7 +339,7 @@ function InventConference() {
             {/* Partner logos */}
             <div className="inline-flex max-w-full flex-wrap items-center gap-2 rounded-[20px] bg-white px-3 py-2 shadow-sm md:gap-3 md:rounded-[24px] md:px-4 md:py-3">
               <img
-                src="/images/Logo-ATU-Net.png"
+                src="/images/logoatunet.png"
                 alt="ATU-Net"
                 className="h-7 w-auto object-contain md:h-10"
               />
@@ -435,7 +449,8 @@ function InventConference() {
             About The Conference
           </p>
           <h3 className="mt-4 text-3xl font-bold md:text-4xl">
-            Knowledge-Driven Innovation and Human-Centered Approaches
+            Knowledge-Driven Innovation and Human-Centered Approaches for Building 
+            Resilient and Sustainable Socioeconomic Systems
           </h3>
           <p className="mt-6 text-lg leading-8 text-slate-600">
             Building upon the successful implementation of the conference in

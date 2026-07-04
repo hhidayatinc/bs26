@@ -27,7 +27,8 @@ function Committee() {
     "Prof. Dr. Ir. Imam Santoso, M.P., Universitas Brawijaya, Indonesia",
     "Ir. Achmad Wicaksono, M.Eng., Ph.D. IPU, Universitas Brawijaya, Indonesia",
     "Dr. Cherry Ann P. Roxas, Davao del Sur State College, the Philippines",
-    "Prof. Widodo, S.Si., M.Si., Ph.D.Med.Sc, Universitas Brawijaya, Indonesia"
+    "Prof. Widodo, S.Si., M.Si., Ph.D.Med.Sc, Universitas Brawijaya, Indonesia",
+    "Hendrix Yulis Setyawan, S.TP., M.Si., Ph.D, Universitas Brawijaya, Indonesia"
   ];
 
   const organizingCommittee = [
